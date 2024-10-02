@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+    stop_signal: SIGINT
+    # flask requires SIGINT to stop gracefully
+    # (default stop signal from Compose is SIGTERM)
+    ports:
+      - 80:5000

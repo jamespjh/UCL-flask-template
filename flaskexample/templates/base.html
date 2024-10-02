@@ -1,0 +1,22 @@
+{% extends "indigo/base.html" %}
+
+
+{% block page_title %}Reactions Example{% endblock page_title %}
+
+{% block styles %}
+  {{ super() }}
+  <link href="//cdn.ucl.ac.uk/skins/UCLIndigoSkin/default-theme/css/brightgreen.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+{% endblock styles %}
+
+
+{% block nav_top_links %}
+  <li><a href="{{ url_for('home') }}"> Home</a></li>
+{% endblock nav_top_links %}
+
+
+{% block breadcrumb_links %}
+  <li class="breadcrumb__item"><a href="https://www.ucl.ac.uk/">UCL Home</a></li>
+  <li class="breadcrumb__item"><a href="http://www.ucl.ac.uk/arc">Advanced Research Computing</a></li>
+  <li class="breadcrumb__item"><a href="{{ url_for('home') }}">Flask Example</a></li>
+{% endblock breadcrumb_links %}
+
