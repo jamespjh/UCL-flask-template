@@ -10,7 +10,7 @@ RUN pip install -e .
 
 RUN echo hello
 
-CMD [ "flask", "--app", "flaskexample", \
+CMD ["flask", "--app", "flaskexample", \
      "run",\
-    # "-h 0.0.0.0", \
-     "-p 3000"]
+     "-h","0.0.0.0", \
+     "-p","3000"]
